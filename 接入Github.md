@@ -12,16 +12,16 @@
 接下来会让你输入存储密钥的文件名，推荐直接回撤，不输入文件名
 那么就会生成 id_rsa 和 id_rsa.pub 两个秘钥文件。 
 > Generating public/private rsa key pair.
-> # Enter file in which to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]
+> Enter file in which to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]
 接着又会提示你输入两次密码（该密码是你push文件的时候要输入的密码，而不是github管理者的密码），
 当然，你也可以不输入密码，直接按回车。那么push的时候就不需要输入密码，直接提交到github上了
 > Enter passphrase (empty for no passphrase): 
-> # Enter same passphrase again:
+> Enter same passphrase again:
 创建成功后，会有如下提示：
 > Your identification has been saved in /c/Users/you/.ssh/id_rsa.
-> # Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.
-> # The key fingerprint is:
-> # 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
+> Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.
+> The key fingerprint is:
+> 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
 现在，可以去github上添加公钥了！
 3. 添加你的 SSH key 到 github上面去
  > 拷贝id_rsa.pub文件的 全部内容 全部内容 全部内容！到github账号的 设置中，添加SSH Key。
@@ -31,8 +31,8 @@
  > ssh -T git@github.com
  > 看到如下警告后，输入yes。再输入密码
  > The authenticity of host 'github.com (207.97.227.239)' can't be established.
- > # RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
- > # Are you sure you want to continue connecting (yes/no)?
+ > RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+ > Are you sure you want to continue connecting (yes/no)?
 
  > 最终成功的信号是：
  > Hi username! You've successfully authenticated, but GitHub does not provide shell access.
