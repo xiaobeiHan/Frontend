@@ -6,7 +6,7 @@
 > ls
 如果 id_rsa.pub 或 id_dsa.pub 文件已经存在，就可以跳过步骤2，直接进入步骤3了。
 2. （如果本来没有）创建一个SSH Key：
-> 运行以下命令
+> 运行以下命令  </br>
 > ssh-keygen -t rsa -C "your_email@example.com"
 -t rsa代表的是密钥类型（默认rsa）
 接下来会让你输入存储密钥的文件名，推荐直接回撤，不输入文件名
