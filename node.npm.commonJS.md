@@ -20,5 +20,28 @@
 > 阮一峰老师的详细讲解地址： http://javascript.ruanyifeng.com/nodejs/module.html；
 
 > 我的理解：
+- 每个模块内部，module变量是一个对象，代表当前模块；其 exports属性 是对外的接口；当我们加载某个模块的时候，其实是加载的它的 module.exports 属性；
+- require方法用于加载模块： var example = require('./example.js');
+- 
 
-### 模块化应用
+### node模块化应用
+
+1. 创建package.json文件
+
+> npm init 命令可以创建package.json文件; 文件中的dependencies:{} 就是将要安装的包；
+
+> （这样就可以在拷别人代码的时候，不拷node_modules文件夹，只要有其package.json文件 即可；）；
+
+2. 生成node_modules文件夹
+
+> npm install 命令会生成node_modules文件夹以及下面各种安装包；
+
+3. 如何安装node模块？安装到了哪里？
+
+> npm安装nodejs模块： npm install <模块名>； 就会讲模块安装到 ./node_modules （当前目录是运行命令时候的目录）目录下；
+
+> 更新nodejs模块： npm update  <模块名>；
+
+> 注意：引用包的时候，可以写包的相对路径； 或者不写路径： 就会首先在本项目的node_modules文件夹中寻找；
+> 如果，连js文件扩展名都不写：require("people"); 就会寻找people文件夹， 然后加载其下面的index.js
+> 或者如果该文件夹下存在package.json文件，就会找文件中 main: "xxx.js" 这个文件；

@@ -1,0 +1,22 @@
+{
+  "name": "frontend-team",
+  "version": "1.0.0",
+  "description": "npmtest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaobeiHan/Frontend-Team.git"
+  },
+  "dependencies": {
+    "dateformat": "^2.0.0"
+  },
+  "author": "Xiaobei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaobeiHan/Frontend-Team/issues"
+  },
+  "homepage": "https://github.com/xiaobeiHan/Frontend-Team#readme"
+}
